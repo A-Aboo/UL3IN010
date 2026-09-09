@@ -1,6 +1,6 @@
 # C Functions: `atoi`, `rand`, `srand`, `getrusage`
 
-# Part 1 — Short Explanation + Simple Examples
+# P 1 —
 
 ---
 
