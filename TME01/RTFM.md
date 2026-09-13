@@ -274,7 +274,7 @@ Maximum memory used by the process.
 
 ---
 
-# Part 2 — More Advanced Examples
+# Part 2 — 
 
 ---
 
