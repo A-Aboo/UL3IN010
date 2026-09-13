@@ -1,6 +1,6 @@
 # Shell Commands and C Functions
 
-# Part 1 — Shell Commands
+# Part 1 — 
 
 ---
 
@@ -54,7 +54,7 @@ man 3 system
 
 `time` measures how long a command takes to execute.
 
-### Simple example
+### 
 
 ```bash
 time ls
@@ -119,7 +119,7 @@ Typical range:
 
 `ps` displays information about running processes.
 
-### Simple example
+### 
 
 ```bash
 ps
@@ -165,7 +165,7 @@ This starting date is called the Unix Epoch.
 #include <sys/time.h>
 ```
 
-### Simple example
+### 
 
 ```c
 #include <stdio.h>
@@ -207,7 +207,7 @@ The values are given in clock ticks.
 #include <sys/times.h>
 ```
 
-### Simple example
+### 
 
 ```c
 #include <stdio.h>
@@ -251,7 +251,7 @@ For `times()`, we use it to know how many clock ticks exist in one second.
 #include <unistd.h>
 ```
 
-### Simple example
+### 
 
 ```c
 #include <stdio.h>
@@ -296,7 +296,7 @@ Meaning:
 #include <stdlib.h>
 ```
 
-### Simple example
+### 
 
 ```c
 #include <stdlib.h>
@@ -317,11 +317,11 @@ system("pwd");
 
 ---
 
-# Part 3 — Advanced Shell Examples
+# P 3
 
 ---
 
-## Advanced Example 1 — `time`
+## A 1 — `time`
 
 Measure the execution time of your own program:
 
@@ -347,7 +347,7 @@ sys  → kernel work used 0.2 seconds
 
 ---
 
-## Advanced Example 2 — `nice`
+## 2 — `nice`
 
 Suppose you have a CPU-heavy program:
 
@@ -383,7 +383,7 @@ This:
 
 ---
 
-## Advanced Example 3 — Compare two `nice` priorities
+## 3 — Compare two `nice` priorities
 
 Run one program normally:
 
@@ -426,7 +426,7 @@ So:
 
 ---
 
-## Advanced Example 4 — `ps`
+##  4 — `ps`
 
 Show selected information about running processes:
 
@@ -455,7 +455,7 @@ PID   PPID   NI   %CPU   %MEM   CMD
 
 ---
 
-## Advanced Example 5 — Find a process with `ps`
+## 5 — Find a process with `ps`
 
 Suppose your program is:
 
@@ -484,7 +484,7 @@ PID TTY          TIME CMD
 
 ---
 
-## Advanced Example 6 — Sort processes by CPU
+## 6 — Sort processes by CPU
 
 ```bash
 ps aux --sort=-%cpu
@@ -500,7 +500,7 @@ ps -eo pid,%cpu,%mem,cmd --sort=-%cpu
 
 ---
 
-## Advanced Example 7 — `nice` + `ps`
+## 7 — `nice` + `ps`
 
 Start a program with low priority:
 
@@ -532,11 +532,11 @@ So `nice` changes the priority and `ps` lets us inspect it.
 
 ---
 
-# Part 4 — Advanced C Examples
+# P 4 
 
 ---
 
-## Advanced Example 1 — Measure elapsed time with `gettimeofday`
+## 1 — Measure elapsed time with `gettimeofday`
 
 ```c
 #include <stdio.h>
@@ -577,7 +577,7 @@ to get the elapsed time.
 
 ---
 
-## Advanced Example 2 — `times` + `sysconf`
+## 2 — `times` + `sysconf`
 
 `times()` gives ticks, so we convert them to seconds using:
 
@@ -631,7 +631,7 @@ then:
 
 ---
 
-## Advanced Example 3 — Compare CPU time before and after
+## 3 — Compare CPU time before and after
 
 ```c
 #include <stdio.h>
@@ -674,7 +674,7 @@ after - before
 
 ---
 
-## Advanced Example 4 — `system`
+## 4 — `system`
 
 Execute several shell commands from C:
 
@@ -707,7 +707,7 @@ ps
 
 ---
 
-## Advanced Example 5 — Check `system()` result
+## 5 — Check `system()` result
 
 ```c
 #include <stdio.h>
@@ -730,7 +730,7 @@ int main(void)
 
 ---
 
-## Advanced Example 6 — `gettimeofday` + `system`
+## 6 — `gettimeofday` + `system`
 
 Measure how long a shell command takes:
 
@@ -769,7 +769,7 @@ Command took: 2.001234 seconds
 
 ---
 
-# Part 5 — Commands Used Together
+# P5 — 
 
 Suppose we have:
 
@@ -840,7 +840,7 @@ man time
 
 ---
 
-# Easy Way to Remember
+# 
 
 ```text
 man
