@@ -13,6 +13,7 @@ void initTab(int *tab , int size);
 void printTab(int *tab, int size);
 int sumTab(int *tab, int size);
 int MinSubTab(int *min , int *tab, int size);
-void printMem(char *message);
+
+
 
 #endif
