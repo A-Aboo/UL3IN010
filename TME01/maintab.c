@@ -1,5 +1,11 @@
 #include "tab.h"
 
+void printMem(char *message){
+    struct rusage usage;
+    if(getrusage(RUSAGE_SELF , &usage ) == -1){
+        perror("Error");
+        return ;
+}
 
 int main(int argc, char **argv){
 
