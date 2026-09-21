@@ -1,7 +1,7 @@
 #include "tab.h"
 
 void initTab(int *tab , int size){
-    srand(10);
+   
     for(int i =0 ; i < size ; i++){
         tab[i] = rand() % 10;
     }
@@ -38,11 +38,6 @@ int MinSubTab(int *min , int *tab, int size){
     // ou return subTab(tab,size);
 }
 
-void printMem(char *message){
-    struct rusage usage;
-    if(getrusage(RUSAGE_SELF , &usage ) == -1){
-        perror("Error");
-        return ;
-    }
+
     printf("%s , %ld \n" ,message,  usage.ru_maxrss );
 }
