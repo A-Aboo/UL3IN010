@@ -1,0 +1,26 @@
+Bibliothèque pédagogique d'ordonnancement libsched
+
+1. Contenu 
+
+repertoire src:
+---------------
+Source de la bibliothèque
+
+repertoire demo:
+---------------
+main.c : un exemple d'utilisation de la bibliothèque
+
+scen.c : un fichier contenant un scenario pour faire un TP
+
+
+2. Mode d'emploi
+
+Pour générer la bibliothèque:
+$ cd src
+$ make
+
+Pour tester la bibliothèque:
+$ cd demo
+$ make main
+$ ./main
+
