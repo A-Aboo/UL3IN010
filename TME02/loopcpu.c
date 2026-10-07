@@ -1,32 +1,9 @@
 #include <stdio.h>
-#include <unistd.h>
 
-
-
-void lance_commande(char *command){
-    int ret = system(command);
-    if (ret == 0){
-        printf("cmd execited !! ");
-    }else{
-        printf("execution failed :< ");
-    }
-}
-
-
-
-int main( int argc, char **argv){
-    // long long i = 5000000000;
-    // long long j = 0;
-    // while (j  < i)
-    //     j++;
-    // long long i = 50000000;
-    // long long j = 0;
-    // while ( j < i){
-    //     getpid();
-    //     j++;
-    // }
-    lance_commande(argv[1]);
-    
+int main(){
+    long long i = 0;
+    while ( i  < 5000000000)
+        i++;
 
     return 0;
 }
